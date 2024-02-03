@@ -20,6 +20,18 @@ none."""
 
 
 def last_stone(stones: list[int]) -> int:
+    """ Just the stones game function.
+
+    Note:
+        - Complexity is O(N*log(N)).
+        - This is recursive algorithm implementation.
+
+    Arg:
+        list of int values.
+
+    Return:
+        None if all stones has been destroyed or weight value of the latest stone.
+    """
     if len(stones) == 1:
         return stones[0]
     elif len(stones) == 0:

@@ -25,6 +25,18 @@ from typing import Optional
 
 
 def rotate_right(one_directional_list: Optional[object], k: Optional[int]) -> Optional[object]:
+    """ Reverse values in one directional linked list with no new memory allocation.
+
+    Note:
+        Complexity is O(N) because here we just count len of the list and then reverse operation.
+
+    Args:
+        one_directional_list: object which represented linked list.
+        k: value which represent how many values from linked list should be reversed.
+
+    Return:
+        the same object of linked list with reversed connections.
+    """
     if one_directional_list is None or k == 0 or one_directional_list.next is None:
         pass
     else:

@@ -18,7 +18,8 @@ def kth_largest(array: list[int], k: int) -> Optional[int]:
     """ QuickSelect algorithm to find the k largest element in the array.
 
     Note:
-        Average case is O(N).
+        - Complexity in average case is O(N).
+        - This is a recursive algorithm implementation.
 
     Args:
         array: list of int values.

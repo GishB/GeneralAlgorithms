@@ -23,11 +23,11 @@ def maj_element(nums: list[int]) -> int:
     """ Function to find major element in the list.
 
     Note:
-        Expected that list always contents major element.
-        Speed is 2*O(N)
+        - Expected that list always contents major element.
+        - Complexity is O(N).
 
     Arg:
-        nums: a list of elements
+        nums: a list of elements.
 
     Return:
         The major element from the list.

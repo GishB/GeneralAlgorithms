@@ -18,10 +18,10 @@ Limitations:
 
 
 def color_sort(nums: list[int]) -> list[int]:
-    """ Sort three unique colors in ASC order.
+    """ Sort three unique colors in ASC order for the given list.
 
     Note:
-        This is O(N) implementation.
+        - Complexity is O(N).
 
     Arg:
         nums: list of int values from 0 to 3.

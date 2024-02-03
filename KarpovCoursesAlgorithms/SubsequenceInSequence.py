@@ -12,6 +12,18 @@ For example:
 
 
 def is_subsequence(s: str, t: str) -> bool:
+    """ Find subsequence in general sequence.
+
+    Note:
+        - Complexity is O(N) that is because we go in one directional and allocate memory with dp.
+
+    Args:
+        s: some subsequence of strings which may represent anything.
+        t: general sequence which may contains subsequence.
+
+    Return:
+        True if subsequence is in general sequence or False.
+    """
     dp: list[str] = []
     iter_s: int = 0
     iter_t: int = 0

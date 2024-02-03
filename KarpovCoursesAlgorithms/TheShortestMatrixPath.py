@@ -13,6 +13,18 @@ Your task is to write function "min_path(grid)" which requires:
 
 
 def min_path(grid: list[list[int]]) -> int:
+    """ Find minimum cost for the best path in the grid.
+
+    Note:
+        - Complexity is O(N^2) because we have to check all possibles cells in the grid.
+        - Here we have greedy algorithm implementation which chose always the best way from the two past states.
+
+    Arg:
+        grid: some randomly generated grid like NxN matrix with not null filled values.
+
+    Return:
+        Value which represent minimum sum of cost for the chosen path.
+    """
     m_space = len(grid)
     n_space = len(grid[0])
     mem_grid = [[0 for i in range(n_space)] for j in range(m_space)]

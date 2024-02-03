@@ -14,11 +14,12 @@ def merge(a: list[int], b: list[int]) -> list[int]:
     """ Algos to sort two sequences.
 
     Note:
-        Equal to O(N).
+        - Complexity is O(N).
 
     Args:
         a: list of ASC sorted random int values.
         b: list of ASC sorted random int values.
+
     Return:
         merged a and b sequences in ASC order.
     """

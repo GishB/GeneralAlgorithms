@@ -16,7 +16,8 @@ def merge_sort(arr: list[int]) -> list[int]:
     """ Sort array in ASC order.
 
     Note:
-        The best case is Nlog(N).
+        - Complexity is O(Nlog(N)).
+        - This is a recursive algorithm implementation.
 
     Arg:
         arr: an array of ing values.
@@ -37,11 +38,12 @@ def merge(a: list[int], b: list[int]) -> list[int]:
     """ Algos to sort two sequences.
 
     Note:
-        Equal to O(N).
+        - Complexity is O(N).
 
     Args:
         a: list of ASC sorted random int values.
         b: list of ASC sorted random int values.
+
     Return:
         merged a and b sequences in ASC order.
     """
