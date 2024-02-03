@@ -21,26 +21,34 @@ For example:
         k = 2
         return [4, 5, 1, 2, 3, ]
 """
+from typing import Optional
 
-#
-# class Node:
-#     def __init__(self, value, next=None):
-#         self.value = value
-#         self.next = next
-#
-#
-# def rotate_right(head: Node, k: int) -> Node:
-#     if head is None or k == 0 or head.next is None:
-#         out = head
-#     else:
-#         len_list = 0
-#         while True:
-#             next_value = head.next.value
-#             if next_value is not None:
-#                 len_list += 1
-#     return out
-#
-#
-# if __name__ == "__main__":
-#     list_test = Node(1, Node(2, Node(3, Node(4, None))))
-#     print(list_test.value, list_test.next.value, list_test.next.next.value, list_test.next.next.next.value)
+
+def rotate_right(one_directional_list: Optional[object], k: Optional[int]) -> Optional[object]:
+    if one_directional_list is None or k == 0 or one_directional_list.next is None:
+        pass
+    else:
+        len_list = 1
+        p = one_directional_list
+        while p.next is not None:
+            p = p.next
+            len_list += 1
+        k %= len_list
+        p.next = one_directional_list
+        for i in range(len_list - k):
+            p = p.next
+        one_directional_list = p.next
+        p.next = None
+    return one_directional_list
+
+
+if __name__ == "__main__":
+    class Node:
+        def __init__(self, value, next=None):
+            self.value = value
+            self.next = next
+
+
+    list_test = Node(1, Node(2, Node(3, Node(4, None))))
+    # print(list_test.value, list_test.next.value, list_test.next.next.value, list_test.next.next.next.value)
+    rotate_right(list_test, 2)
