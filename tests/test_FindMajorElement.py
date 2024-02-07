@@ -9,8 +9,8 @@ def list_of_tests():
 
 
 def test_maj_element_0(list_of_tests):
-    assert maj_element(list_of_tests[0][0]) == list_of_tests[0][1], "Unexpected behavior for simple test №0"
+    assert maj_element(list_of_tests[0][0]) == list_of_tests[0][1], "Unexpected behavior for maj element test №0"
 
 
 def test_maj_element_1(list_of_tests):
-    assert maj_element(list_of_tests[1][0]) == list_of_tests[1][1], "Unexpected behavior for simple test №1"
+    assert maj_element(list_of_tests[1][0]) == list_of_tests[1][1], "Unexpected behavior for maj element test №1"
