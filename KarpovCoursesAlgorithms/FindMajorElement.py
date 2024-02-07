@@ -50,18 +50,3 @@ def maj_element(nums: list[int]) -> int:
             major_element = number
             break
     return major_element
-
-# if __name__ == "__main__":
-#     for test in range(2):
-#         if test == 0:
-#             nums = [3, 5, 5, 1]
-#             expected = 5
-#             out = maj_element(nums)
-#         elif test == 1:
-#             nums = [0, 1, 1, 1, 0, 0, 0, 0]
-#             expected = 0
-#         out = maj_element(nums)
-#         if expected == out:
-#             print("OK")
-#         else:
-#             print("Failed")

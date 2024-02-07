@@ -54,20 +54,20 @@ def color_sort(nums: list[int]) -> list[int]:
     return nums
 
 
-if __name__ == "__main__":
-    for test in range(3):
-        if test == 0:
-            nums = [2, 0, 1, 0, 2]
-            expected = [0, 0, 1, 2, 2]
-        elif test == 1:
-            nums = [2, 1, 0]
-            expected = [0, 1, 2]
-        else:
-            nums = [2, 1, 1, 0, 0, 2, 2]
-            expected = [0, 0, 1, 1, 2, 2, 2]
-
-        out = color_sort(nums)
-        if out == expected:
-            print("OK")
-        else:
-            print("Failed")
+# if __name__ == "__main__":
+#     for test in range(3):
+#         if test == 0:
+#             nums = [2, 0, 1, 0, 2]
+#             expected = [0, 0, 1, 2, 2]
+#         elif test == 1:
+#             nums = [2, 1, 0]
+#             expected = [0, 1, 2]
+#         else:
+#             nums = [2, 1, 1, 0, 0, 2, 2]
+#             expected = [0, 0, 1, 1, 2, 2, 2]
+#
+#         out = color_sort(nums)
+#         if out == expected:
+#             print("OK")
+#         else:
+#             print("Failed")

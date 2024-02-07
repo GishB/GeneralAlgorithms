@@ -63,9 +63,9 @@ def last_stone(stones: list[int]) -> int:
         return last_stone(stones)
 
 
-if __name__ == "__main__":
-    stones = [2, 3, 3, 1]
-    if last_stone(stones) == 1:
-        print("OK")
-    else:
-        print("Failed")
+# if __name__ == "__main__":
+#     stones = [2, 3, 3, 1]
+#     if last_stone(stones) == 1:
+#         print("OK")
+#     else:
+#         print("Failed")

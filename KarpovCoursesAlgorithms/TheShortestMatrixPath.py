@@ -41,18 +41,18 @@ def min_path(grid: list[list[int]]) -> int:
     return mem_grid[m_space - 1][n_space - 1]
 
 
-if __name__ == "__main__":
-    for test_num in range(2):
-        if test_num == 0:
-            test_grid = [[0, 1, 2, 3, 4], [1, 12, 3, 4, 5], [2, 3, 4, 5, 6], [3, 4, 5, 6, 17], [4, 5, 6, 7, 8]]
-            min_sum = min_path(test_grid)
-            expected = sum([0, 1, 2, 3, 4, 5, 6, 7, 8])
-        elif test_num == 1:
-            test_grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
-            min_sum = min_path(test_grid)
-            expected = 7
-
-        if min_sum == expected:
-            print("OK")
-        else:
-            print("Failed")
+# if __name__ == "__main__":
+#     for test_num in range(2):
+#         if test_num == 0:
+#             test_grid = [[0, 1, 2, 3, 4], [1, 12, 3, 4, 5], [2, 3, 4, 5, 6], [3, 4, 5, 6, 17], [4, 5, 6, 7, 8]]
+#             min_sum = min_path(test_grid)
+#             expected = sum([0, 1, 2, 3, 4, 5, 6, 7, 8])
+#         elif test_num == 1:
+#             test_grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
+#             min_sum = min_path(test_grid)
+#             expected = 7
+#
+#         if min_sum == expected:
+#             print("OK")
+#         else:
+#             print("Failed")

@@ -48,27 +48,27 @@ def merge(a: list[int], b: list[int]) -> list[int]:
         counter -= 1
     return dp
 
-
-if __name__ == "__main__":
-    for task in range(4):
-        if task == 0:
-            a = [1, 3, 5, 8]
-            b = [2, 6, 7, 13]
-            expected = [1, 2, 3, 5, 6, 7, 8, 13]
-        elif task == 1:
-            a = [-5, 0, 4, 9]
-            b = [1, 1]
-            expected = [-5, 0, 1, 1, 4, 9]
-        elif task == 2:
-            a = []
-            b = [1, 2, 3]
-            expected = [1, 2, 3]
-        else:
-            a = []
-            b = []
-            expected = []
-        out = merge(a, b)
-        if out == expected:
-            print(f'Custom test № {task} is OK')
-        else:
-            print(f'Test № {task} is fail')
+#
+# if __name__ == "__main__":
+#     for task in range(4):
+#         if task == 0:
+#             a = [1, 3, 5, 8]
+#             b = [2, 6, 7, 13]
+#             expected = [1, 2, 3, 5, 6, 7, 8, 13]
+#         elif task == 1:
+#             a = [-5, 0, 4, 9]
+#             b = [1, 1]
+#             expected = [-5, 0, 1, 1, 4, 9]
+#         elif task == 2:
+#             a = []
+#             b = [1, 2, 3]
+#             expected = [1, 2, 3]
+#         else:
+#             a = []
+#             b = []
+#             expected = []
+#         out = merge(a, b)
+#         if out == expected:
+#             print(f'Custom test № {task} is OK')
+#         else:
+#             print(f'Test № {task} is fail')

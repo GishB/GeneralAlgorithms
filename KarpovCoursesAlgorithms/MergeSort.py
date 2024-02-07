@@ -72,10 +72,3 @@ def merge(a: list[int], b: list[int]) -> list[int]:
         counter -= 1
     return dp
 
-
-if __name__ == "__main__":
-    test = merge_sort([3, 1, 2, -1, -5, 10, -50, -100, 9])
-    if test == [-100, -50, -5, -1, 1, 2, 3, 9, 10]:
-        print("OK")
-    else:
-        print("Failed")

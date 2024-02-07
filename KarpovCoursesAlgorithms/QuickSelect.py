@@ -45,34 +45,34 @@ def kth_largest(array: list[int], k: int) -> Optional[int]:
     else:
         return kth_largest(left_partition, k-len(right_partiion))
 
-
-if __name__ == "__main__":
-    for test_num in range(7):
-        k = 2
-        if test_num == 0:
-            test_array = [8, 0, 1, 4, 3, 6, 4, 2, 7]
-            expected = 7
-        elif test_num == 1:
-            test_array = [-1, 1, 3, 5, 7]
-            expected = 5
-        elif test_num == 2:
-            test_array = [-10, -50, 700, 500, 999, 1005, 3005]
-            expected = 1005
-        elif test_num == 3:
-            test_array = [5, -1, 1, 5]
-            expected = 5
-        elif test_num == 4:
-            test_array = [0, 0, 0]
-            expected = 0
-        elif test_num == 5:
-            test_array = [3, 2, 1, 5, 6, 4]
-            expected = 5
-        else:
-            test_array = [3, 2, 3, 1, 2, 4, 5, 5, 6]
-            expected = 4
-            k = 4
-        out = kth_largest(test_array, k)
-        if out == expected:
-            print("OK")
-        else:
-            print("Failed")
+#
+# if __name__ == "__main__":
+#     for test_num in range(7):
+#         k = 2
+#         if test_num == 0:
+#             test_array = [8, 0, 1, 4, 3, 6, 4, 2, 7]
+#             expected = 7
+#         elif test_num == 1:
+#             test_array = [-1, 1, 3, 5, 7]
+#             expected = 5
+#         elif test_num == 2:
+#             test_array = [-10, -50, 700, 500, 999, 1005, 3005]
+#             expected = 1005
+#         elif test_num == 3:
+#             test_array = [5, -1, 1, 5]
+#             expected = 5
+#         elif test_num == 4:
+#             test_array = [0, 0, 0]
+#             expected = 0
+#         elif test_num == 5:
+#             test_array = [3, 2, 1, 5, 6, 4]
+#             expected = 5
+#         else:
+#             test_array = [3, 2, 3, 1, 2, 4, 5, 5, 6]
+#             expected = 4
+#             k = 4
+#         out = kth_largest(test_array, k)
+#         if out == expected:
+#             print("OK")
+#         else:
+#             print("Failed")

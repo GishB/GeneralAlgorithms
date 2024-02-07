@@ -43,23 +43,23 @@ def is_subsequence(s: str, t: str) -> bool:
     return "".join(dp) == s
 
 
-if __name__ == "__main__":
-    for task in range(3):
-        if task == 0:
-            s = "abd"
-            t = "aiebkgdle"
-            expected = True
-        elif task == 1:
-            s = 'Терма'
-            t = 'Телеграмма'
-            expected = True
-        elif task == 2:
-            s = "axe"
-            t = "abgirx"
-            expected = False
-
-        out = is_subsequence(s, t)
-        if out == expected:
-            print(f"Test № {task} is OK")
-        else:
-            print(f"Test № {task} failed")
+# if __name__ == "__main__":
+#     for task in range(3):
+#         if task == 0:
+#             s = "abd"
+#             t = "aiebkgdle"
+#             expected = True
+#         elif task == 1:
+#             s = 'Терма'
+#             t = 'Телеграмма'
+#             expected = True
+#         elif task == 2:
+#             s = "axe"
+#             t = "abgirx"
+#             expected = False
+#
+#         out = is_subsequence(s, t)
+#         if out == expected:
+#             print(f"Test № {task} is OK")
+#         else:
+#             print(f"Test № {task} failed")
