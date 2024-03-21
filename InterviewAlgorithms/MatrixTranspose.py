@@ -25,12 +25,3 @@ def transpose(matrix: list[list[float | int]]) -> list[list[float | int]]:
     matrix_length = len(matrix)
     L = list(chain(*matrix))
     return [L[i::matrix_length] for i in range(matrix_length)]
-
-
-if __name__ == "__main__":
-    import numpy as np
-    test_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    # test_matrix = [[1,2],[3,4]]
-    out = transpose(test_matrix)
-    numpy_test = np.array(test_matrix).T
-    test = 0
