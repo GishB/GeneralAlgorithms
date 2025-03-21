@@ -5,9 +5,16 @@
 # (т.е. все 'O', окруженные с четырех сторон 'X'). Все буквы X и O английские.
 # Чтобы затопить остров, нужно все его 'O' превратить в 'X'.
 
-# Example:
+# Example case:
+
+# Input:
 # X - X - X - X - X
 # X - O - O - O - X
+# O - X - X - X - X
+
+# Output:
+# X - X - X - X - X
+# X - X - X - X - X
 # O - X - X - X - X
 
 from typing import List, Optional, Set, Tuple
