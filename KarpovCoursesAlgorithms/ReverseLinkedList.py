@@ -53,14 +53,15 @@ def rotate_right(one_directional_list: Optional[object], k: Optional[int]) -> Op
         p.next = None
     return one_directional_list
 
-#
-# if __name__ == "__main__":
-#     class Node:
-#         def __init__(self, value, next=None):
-#             self.value = value
-#             self.next = next
-#
-#
-#     list_test = Node(1, Node(2, Node(3, Node(4, None))))
-#     # print(list_test.value, list_test.next.value, list_test.next.next.value, list_test.next.next.next.value)
-#     rotate_right(list_test, 2)
+
+if __name__ == "__main__":
+    class Node:
+        def __init__(self, value, next=None):
+            self.value = value
+            self.next = next
+
+
+    list_test = Node(1, Node(2, Node(3, Node(4, None))))
+    # print(list_test.value, list_test.next.value, list_test.next.next.value, list_test.next.next.next.value)
+    test = rotate_right(list_test, -1)
+    print("stop")
