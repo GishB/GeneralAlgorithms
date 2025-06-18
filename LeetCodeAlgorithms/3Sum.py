@@ -18,7 +18,7 @@ Notice that the order of the output and the order of the triplets does not matte
 from typing import List
 
 
-def threeSum(nums: List[int]) -> List[List[int]]:
+def threeSum(nums: List[int]) -> List[List[int]]: # noqa
     """ Find all pairs which follow the rule.
 
     Notes:
